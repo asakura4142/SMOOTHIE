@@ -93,9 +93,9 @@ h1{
     font-size: 30px;
     line-height: 50px;
 }
-/* About */
+                                                                                /* About */
 .about{
-padding-top: 65px;
+    padding-top: 65px;
 }
 .items-wrapper{
     display: grid;
@@ -109,8 +109,8 @@ padding-top: 65px;
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 12px;
+    text-align: start;
 }
-
 .about-item__subtitle{
     color: #9a9a9a;
     font-size: 15px;
@@ -150,7 +150,7 @@ padding-top: 65px;
     font-size: 20px;
     font-weight: 700;
 }                                                                                
-                                                                                                                    /* Team */
+                                                                                    /* Team */
 .team {
     padding: 50px 0 110px 0;
 }
@@ -172,34 +172,35 @@ h2{
 }
 .team-cards-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
 }
 .team-card {
-    width: 33%;  
-    height: 380px;
+    width: calc(50% - 201px);  
+    margin:0 0 40px 190px;
+    display: flex;
     border-radius: 5px;
     background-color: #c9e3f4;
-    margin:0 0 40px 188px;
-    position: relative;
+    /* margin-left: 190px; */
 }
 .team-card img{
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-75%, -50%);  
- 
+    /* position: absolute; */
+    /* top: 50%;
+    left: 25%;*/
+    margin-left: -190px;
+
 }
-.team-card:nth-child(n+3) img{
-    right: 25%;
-    transform: translate(75%, -50%);  
-}
+/* .team-card:nth-child(n+3) img{
+    transform: translate(50%, -50%);  
+} */
 .team-card__text-wrapper {
+    /* width: 380px;  
+    height: 380px; */
     color: #433840;
     font-weight: 300;
-    margin: 80px 0 80px 170px;
-    padding-left: 17px;
+    /* margin: 80px 0 80px 170px; */
+    /* padding-left: 17px; */
 }
 h3{
     color: #ffffff;
@@ -224,7 +225,7 @@ font-weight: 400;
 line-height: 35px;
 }
 
-/* Responsive */
+                                                                                /* Responsive */
 @media (max-width:767px){
     body.lock{
         overflow: hidden;
